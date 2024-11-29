@@ -31,10 +31,11 @@ public class BowlingGameMain {
 				nbQuillesTombeesL2 = rand.nextInt(0, 10-nbQuillesTombeesL1);
 				partie.enregistreLancer(nbQuillesTombeesL1);
 				partie.enregistreLancer(nbQuillesTombeesL2);
+			
 			}
 			System.out.println("Score de Pierre: " + partie.scorePour("Pierre"));
 
-			// Tour de Peach
+			// Tour de Paul
 			proba = rand.nextFloat();
 			if (proba > 0.95) partie.enregistreLancer(10);
 			else if (proba > 0.7) {
@@ -54,7 +55,7 @@ public class BowlingGameMain {
 			
 		}
 
-		// Dernier tour de Mario
+		// Dernier tour de Pierre
 		proba = rand.nextFloat();
 		if (proba > 0.95) {
 			partie.enregistreLancer(10);
@@ -78,7 +79,7 @@ public class BowlingGameMain {
 			partie.enregistreLancer(nbQuillesTombeesL2);
 		}
 
-		// Dernier tour de Peach
+		// Dernier tour de paul
 		proba = rand.nextFloat();
 		if (proba > 0.99) {
 			partie.enregistreLancer(10);
@@ -102,53 +103,7 @@ public class BowlingGameMain {
 			partie.enregistreLancer(nbQuillesTombeesL2);
 		}
 
-		// Dernier tour de Luigi
-		proba = rand.nextFloat();
-		if (proba > 0.1) {
-			partie.enregistreLancer(10);
-			partie.enregistreLancer(10);
-		}
-		else if (proba > 0.05) {
-			partie.enregistreLancer(10);
-			partie.enregistreLancer(rand.nextInt(0, 10));
-		}
-		else if (proba > 0.01) {
-			nbQuillesTombeesL1 = rand.nextInt(0, 10);
-			nbQuillesTombeesL2 = 10-nbQuillesTombeesL1;
-			partie.enregistreLancer(nbQuillesTombeesL1);
-			partie.enregistreLancer(nbQuillesTombeesL2);
-			partie.enregistreLancer(rand.nextInt(0, 10));
-		}
-		else {
-			nbQuillesTombeesL1 = rand.nextInt(0, 10);
-			nbQuillesTombeesL2 = rand.nextInt(0, 10 - nbQuillesTombeesL1);
-			partie.enregistreLancer(nbQuillesTombeesL1);
-			partie.enregistreLancer(nbQuillesTombeesL2);
-		}
-
-		// Dernier tour de Toad
-		proba = rand.nextFloat();
-		if (proba > 0.99) {
-			partie.enregistreLancer(10);
-			partie.enregistreLancer(10);
-		}
-		else if (proba > 0.98) {
-			partie.enregistreLancer(10);
-			partie.enregistreLancer(rand.nextInt(0, 10));
-		}
-		else if (proba > 0.9) {
-			nbQuillesTombeesL1 = rand.nextInt(0, 10);
-			nbQuillesTombeesL2 = 10-nbQuillesTombeesL1;
-			partie.enregistreLancer(nbQuillesTombeesL1);
-			partie.enregistreLancer(nbQuillesTombeesL2);
-			partie.enregistreLancer(rand.nextInt(0, 10));
-		}
-		else {
-			nbQuillesTombeesL1 = rand.nextInt(0, 10);
-			nbQuillesTombeesL2 = rand.nextInt(0, 10 - nbQuillesTombeesL1);
-			partie.enregistreLancer(nbQuillesTombeesL1);
-			partie.enregistreLancer(nbQuillesTombeesL2);
-		}
+		
 
 		System.out.println("Les scores finals sont: -----");
 		System.out.println("----------------------------------");
