@@ -17,7 +17,7 @@ public class BowlingGameMain {
 
 		for (int i = 1; i < 10; i++) {
 			System.out.println("Tour n°" + i);
-			// Tour de Mario
+			// Tour de Pierre
 			proba = rand.nextFloat();
 			if (proba > 0.8) partie.enregistreLancer(10);
 			else if (proba > 0.3) {
